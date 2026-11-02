@@ -1,0 +1,3 @@
+# Archon Tekton corporate website
+
+This website is published from the isolated `archon-tekton-site` branch. The repo main branch belongs to a different project and must not be modified. Static HTML/CSS/JS; Render publish directory `site`, build command `echo 'Static site ready'`. No Neon or server. Brand uses charcoal/limestone/gold and a vector illustration based on the founder's original sculptural gateway logo; before final approval, replace illustration with the founder's original exact brand artwork asset. Registered office is displayed with founder's explicit approval. Email moagi@archontekton.com. Public phone and WhatsApp +27 72 493 6690. Verify policies and mail channel operationally. DNS must be configured at Squarespace without changing email records.
