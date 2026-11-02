@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meta Platform Data Policy | Archon Tekton</title>
+<meta name="description" content="Meta Platform Data Policy for Archon Tekton (Pty) Ltd, South Africa.">
+<link rel="canonical" href="https://archontekton.com/meta-data/">
+<style>
+:root{--ink:#232323;--gold:#b99159;--paper:#f5f1ea;--line:#d8d0c3}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Arial,Helvetica,sans-serif;font-size:16px;line-height:1.7}a{color:#665029;text-underline-offset:.2em}a:hover{color:#232323}header{border-bottom:1px solid var(--line);padding:20px max(24px,calc((100vw - 1050px)/2));display:flex;justify-content:space-between;align-items:center;gap:18px}header a{color:var(--ink);text-decoration:none;font-weight:700;letter-spacing:.14em;font-size:12px}nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-weight:400;letter-spacing:0;font-size:13px}main{max-width:800px;margin:55px auto 88px;padding:0 25px}h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(42px,6vw,65px);line-height:1.06;letter-spacing:-.03em;margin:0 0 12px}h2{font-family:Georgia,'Times New Roman',serif;font-size:26px;line-height:1.18;margin:38px 0 12px}p,li{max-width:75ch}li{margin:.35em 0}ul,ol{padding-left:23px}.overline{font-size:12px;font-weight:bold;letter-spacing:.17em;color:#84683f;text-transform:uppercase}.intro{font-size:19px;line-height:1.6;margin:23px 0 28px}.legal{padding:18px 22px;border:1px solid var(--line);border-left:4px solid var(--gold);background:#fff9ee;margin:25px 0 30px}.legal strong{display:block}footer{border-top:1px solid var(--line);padding:32px 24px 50px;text-align:center;font-size:13px;color:#65625c}footer a{padding:0 8px}@media(max-width:560px){header{align-items:flex-start;flex-direction:column}main{margin:45px auto 65px}h2{font-size:23px}}
+</style>
+</head><body>
+<header><a href="/">ARCHON TEKTON</a><nav><a href="/privacy/">Privacy</a><a href="/delete-data/">Delete your data</a><a href="/meta-data/">Meta data</a></nav></header>
+<main>
+<p class="overline">ARCHON TEKTON · GOVERNANCE</p>
+<h1>META PLATFORM DATA POLICY</h1>
+<p class="overline">Developer-facing platform data use standard and public-facing disclosure · Conditional: activate per approved Meta product</p>
+<p>Archon Tekton develops systems that make communication and day-to-day business processes easier. This document sets the standards for any integration we build with Meta products or APIs. It does not represent that a Meta API, Facebook Login or WhatsApp Cloud API integration is already active on our public website.</p>
+<h2>1. Scope and service distinction</h2>
+<p>The Phase 1 website at archontekton.com provides a WhatsApp click-to-chat link to <a href="https://wa.me/27724936690" rel="noopener noreferrer">https://wa.me/27724936690</a>. That outbound link does not itself give Archon Tekton API access to a visitor’s Facebook or WhatsApp account. Any future Meta-integrated application will require an updated, product-specific disclosure.</p>
+<h2>2. Potential platform data categories - not currently collected by the public site</h2>
+<ul>
+<li>Where a person or business explicitly connects a supported Meta service: relevant business account IDs, page or phone-number IDs, scopes/permissions and configuration metadata.</li>
+<li>For authorised WhatsApp Business Platform operations: the sender/recipient identifiers, telephone numbers, message content supplied to the business, delivery status, event time and necessary routing information.</li>
+<li>For approved authentication or connection flows: app-scoped identifiers and authorised profile or account fields limited to requested permissions.</li>
+<li>Service security records such as restricted token metadata, webhook event IDs, error status and access audit information; never expose secret tokens in client code or logs.</li>
+</ul>
+<p>Actual categories must be confirmed from the final app permissions and webhook subscriptions; the above list is a planning inventory, not a declaration of present collection.</p>
+<h2>3. Allowed purposes and boundaries</h2>
+<ul>
+<li>Perform only the requested, authorised messaging, onboarding, notification, status, support or secure-portal workflow.</li>
+<li>Provide relevant customer support, troubleshoot delivery and maintain secure operation.</li>
+<li>Meet legitimate contractual and legal responsibilities in a manner consistent with Meta Platform Terms and the product’s applicable policies.</li>
+<li>Do not sell platform data, use it for unrelated advertising profiling, or repurpose messages for unrelated products without an appropriate new basis and required permissions.</li>
+</ul>
+<h2>4. Access, security and processor relationships</h2>
+<p>Restrict API credentials to secured backend systems; rotate and revoke when necessary. Authenticate webhooks, use access controls and minimise log content. Confirm whether Archon Tekton is the responsible party or an operator acting for a customer on each deployment and document the roles and instructions in the customer agreement.</p>
+<h2>5. Retention and deletion</h2>
+<p>The default operating rule for future Meta data is to keep it only while it is genuinely needed for the authorised purpose, subject to applicable law and Meta product restrictions. Technical webhook payloads should be transient where possible. Specific storage and retention periods must be documented by data category before release and must not be inferred from Meta’s own storage practices.</p>
+<p>Users can make a deletion request at <a href="mailto:moagi@archontekton.com">moagi@archontekton.com</a> or follow the instructions at <a href="/delete-data/">https://archontekton.com/delete-data/</a>. Where an authorised customer is the responsible party, we will coordinate appropriately with that customer. Disconnection must stop future permitted access, and existing data under Archon Tekton&#x27;s control must be evaluated for deletion, restriction or justified retention.</p>
+<h2>6. User rights and third-party disclosures</h2>
+<p>The public privacy policy explains how people ask for access, correction or deletion. Relevant Meta account settings and WhatsApp’s own privacy policy govern independent processing carried out by those platforms. A request to Archon Tekton covers information under Archon Tekton’s control, not information held solely by Meta.</p>
+<h2>7. Mandatory activation gate before app review or production access</h2>
+<ol>
+<li>Name the precise Meta product and Meta App ID internally; inventory all permissions/scopes, webhooks, data fields and recipients.</li>
+<li>Record legal role for each workflow, lawful basis, customer instruction, cross-border transfer and the exact retention/erasure logic.</li>
+<li>Publish accurate HTTPS URLs for the general privacy policy and data deletion instructions; ensure public crawler access.</li>
+<li>Test any callback endpoint if the actual Meta app configuration requires an automated deletion callback rather than instructions only.</li>
+<li>Demonstrate deletion handling, access control, token security, provider oversight and breach escalation. Update this document with actual operations.</li>
+</ol>
+<h2>8. Policy owner and change management</h2>
+<p>Policy owner: Archon Tekton Information Officer / authorised representative. Contact <a href="mailto:moagi@archontekton.com">moagi@archontekton.com</a>. Review this standard before any new Meta permission request and after material platform-policy or business changes.</p>
+</main><footer>Archon Tekton (Pty) Ltd · 2026/591074/07 · Remote-first · Gauteng, South Africa · +27 72 493 6690 · <a href="mailto:moagi@archontekton.com">moagi@archontekton.com</a><p><a href="/privacy/">Privacy Policy</a> · <a href="/delete-data/">Delete your data</a> · <a href="/meta-data/">Meta Platform Data</a></p></footer></body></html>
